@@ -1,6 +1,12 @@
+@import url(../build/css/vars.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.color{color: var(--clr-blue-100); } 
+
+
 
 
 
