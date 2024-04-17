@@ -916,6 +916,7 @@ video {
 
 .color{
   color: var(--clr-blue-100);
+<<<<<<< HEAD
 }
 
 .bg-form{
@@ -947,6 +948,14 @@ video {
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
+=======
+} 
+.white-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+>>>>>>> 7aa41a41ab6f965e97836a568f4788535176e714
 
 
 
