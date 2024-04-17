@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 .color{color: var(--clr-blue-100); } 
+.bg-form{background-color:var(--clr-yelow-100);}
 
 
 
