@@ -804,7 +804,11 @@ video {
 .color{
   color: var(--clr-blue-100);
 } 
-
+.white-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
 
 
 
