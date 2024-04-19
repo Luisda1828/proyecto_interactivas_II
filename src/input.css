@@ -7,6 +7,27 @@
 .color{color: var(--clr-blue-100); } 
 .orange-prim{color:var(--clr-yelow-100);}
 
+.titulo{
+    font-family: var(--ff-primary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-sem-bold)
+} 
+
+.titulo-ligero{
+    font-family: var(--ff-primary);
+    font-size: 2.5rem;
+} 
+
+.subtitulo{
+    font-family: var(--ff-primary);
+    font-size: 1.625rem;
+    font-weight: var(--fw-reg);
+} 
+
+.texto{
+    font-family: var(--ff-secundary);
+    font-size: 1rem;
+} 
 
 
 
