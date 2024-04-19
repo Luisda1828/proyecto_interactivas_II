@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.color{color: var(--clr-blue-100); } 
+.orange-prim{color:var(--clr-yelow-100);}
+
 .titulo{
     font-family: var(--ff-primary);
     font-size: 2.5rem;
@@ -25,7 +28,6 @@
     font-family: var(--ff-secundary);
     font-size: 1rem;
 } 
-
 
 
 
