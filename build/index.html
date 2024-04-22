@@ -15,11 +15,12 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 
 <body class="sm:my-5 sm:mx-12">
     <header class="sm:block hidden">  <!-- header desktop-->
-        <div class="block flex gap-x-5 sm:bg-white bg-sky-600 sm:py-0 py-4">
+        <div class=" flex gap-x-5 sm:bg-white bg-sky-600 sm:py-0 py-4">
 
             <div class="sm:flex block gap-x-5 ">
                 <div class="flex flex-col">
@@ -221,7 +222,93 @@
 
     <main>
         
+        <div class=" flex flex-grow justify-center mt-4  ">
+            <div class="p-1 m-1 font-sans rounded-2xl  ring-2 ring-white shadow-xl w-80 py-8 relative bg-sky-600 text-white">
+                <div class="flex justify-around mb-8">
+                    <div>
+                        <p class="text-center texto">Poco</p>
+                        <div class="h-5 w-12  bg-[#F5A747] rounded-full mt-3"></div>
+                    </div>
+                    <div>
+                        <p class="text-center texto">Moderado</p>
+                        <div class="h-5 w-12 bg-gray-300 m-auto rounded-full mt-3"></div>
+                    </div>
+                    <div class="place-items-center">
+                        <p class="text-center texto">Mucho</p>
+                        <div class="h-5 w-12 bg-gray-300 m-auto rounded-full mt-3"></div>
+                    </div>
+                </div>
+                <div class="flex justify-around items-center">
+                    <a href="" class="w-5 h-5 ring-2 ring-[#F5A747] rounded-full text-center flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59844 9.66V7.58L1.15844 4.42V5.58L9.59844 2.42V0.34L0.378437 3.92V6.08L9.59844 9.66Z" fill="#F5A747"/>
+                        </svg></a>
+                    <p class="p-1 text-xl font-semibold text-center subtitulo">Abril 2024</p>
+                    <a href="" class="w-5 h-5 ring-2 ring-[#F5A747] rounded-full text-center flex items-center justify-center"><svg class="-rotate-180" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59844 9.66V7.58L1.15844 4.42V5.58L9.59844 2.42V0.34L0.378437 3.92V6.08L9.59844 9.66Z" fill="#F5A747"/>
+                        </svg></a>
+                </div>
+                <hr class="w-[80%] border-[#F5A747] m-auto">
+                <div class="p-1 m-1">
+                    <div class="flex justify-around subtitulo font-normal mb-4">
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class=" font-normal" >L</p> 
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class=" ">K</p>
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class="">M</p>
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class="">J</p>
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class="">V</p>
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class="">S</p>
+                        </div>
+                        <div class="grid place-items-center" :class="{'text-red-600': days == 'Ya'}">
+                            <p class="">D</p>
+                        </div>
+                    </div>
+                    <div id="parentDiv" class="grid grid-cols-7 gap-1 font-semibold text-center">
+                        <div class="">
+                            <p class=""></p>
+                        </div>
+                    </div>
+                    <a class="absolute left-[45%] top-[95%] ring-2 ring-white bg-sky-600 h-8 w-8 rounded-md flex items-center justify-center"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.25559 1.97652C8.25559 1.28296 7.69332 0.720703 6.99977 0.720703C6.30623 0.720703 5.74396 1.28296 5.74396 1.97652V5.74396H1.97652C1.28296 5.74396 0.720703 6.30623 0.720703 6.99977C0.720703 7.69332 1.28296 8.25559 1.97652 8.25559H5.74396V12.023C5.74396 12.7166 6.30623 13.2788 6.99977 13.2788C7.69332 13.2788 8.25559 12.7166 8.25559 12.023V8.25559H12.023C12.7166 8.25559 13.2788 7.69332 13.2788 6.99977C13.2788 6.30623 12.7166 5.74396 12.023 5.74396H8.25559V1.97652Z" fill="white"/>
+                        </svg></a>
+                    <span class="absolute left-[35%] top-[105%] text-sky-600 text-nowrap  font-semibold sm:text-[1.625rem]  sm:left-[25%]">Añadir evento</span>
+                </div>
+                <div class="absolute top-[115%] sm:top-[120%] bg-sky-600 text-center w-[98%] rounded-full ring-2 ring-white shadow-xl flex flex-col texto ">Resumen de actividades Diarias y <span>Semanales</span></div>
+            </div>
+        </div>
+    </div>
     </main>
+    <script>
+        // Obtener el div padre
+        var parentDiv = document.getElementById("parentDiv");
+
+        // Crear 31 div hijos y agregarlos al div padre
+        for (var i = 1; i <= 30; i++) {
+            // Crear un nuevo div
+            var newDiv = document.createElement("div");
+            newDiv.classList.add("texto");
+            newDiv.classList.add("font-normal");
+
+            // Crear un nuevo párrafo con el número del día
+            var newParagraph = document.createElement("p");
+            newParagraph.textContent = i;
+
+            // Agregar el párrafo al div
+            newDiv.appendChild(newParagraph);
+
+            // Agregar el div al div padre
+            parentDiv.appendChild(newDiv);
+        }
+    </script>
 </body>
 
 </html>
