@@ -6,13 +6,9 @@
     --spacer-md: 1;
     --spacer-lg: 1.5;
     --spacer-xlg: 3;
-
-
-
-
     /* font & weight */
 
-    --ff-primary: "Montserrat", sans-serif;
+    --ff-primary: "Montserrat Alternates", sans-serif;
     --ff-secundary: "Carrois Gothic SC", sans-serif;
     --fw-reg: 400;
     --fw-med: 500;
