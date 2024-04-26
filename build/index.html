@@ -194,30 +194,75 @@
         </div>
     </header>
 
-    <header class="sm:hidden block"> <!-- header movil -->
-        <div class="bg-sky-600">
-            <div class="flex justify-between p-4 items-center">
-                <a class="texto text-white" href="index.html"><img class="size-8" src="./img/vinxLogo.svg"
-                        alt="">vinx</a>
-                <a class="texto text-white" href="index.html"><img class="size-8" src="./img/sms.svg" alt=""></a>
-                <a class="texto text-white" href="index.html"><img class="size-8" src="./img/notify.svg" alt=""></a>
-                <div class="flex block">
-                    <input class="hidden absolute size-8 " type="checkbox" name="" id="">
-                    <img class=" size-8" src="./img/filters.svg" alt="">
-                </div>
-                <div class="flex block">
-                    <input class="hidden absolute size-8 " type="checkbox" name="" id="">
-                    <img class=" size-8" src="./img/hamb-menu.svg" alt="">
-                </div>
-            </div>
-            <div class="py-4">
-                <form class="h-8 mx-4 ring-2 ring-white flex bg-sky-600 rounded-full" action="">
-                    <input class="focus:outline-none pl-4 w-full text-white texto bg-transparent" type="text"
-                        placeholder="Buscar evento">
-                    <input class="px-4 lupa w-10" type="submit" value="">
-                </form>
+    <header class="relative sm:hidden block"> <!-- header movil -->
+        <div class="bg-sky-600 flex py-4 px-8">
+            <a class="texto text-white flex grow" href="index.html"><img class="size-8" src="./img/vinxLogo.svg"
+                    alt="">vinx</a>
+            <div class="items-center">
+                <input class="hidden absolute size-8 " type="checkbox" name="" id="">
+                <img class=" size-8" src="./img/hamb-menu.svg" alt="">
             </div>
         </div>
+        <!-- menu emergente -->
+        <div class="z-10 absolute top-0 right-[0px] w-[70vw] h-[100vh]  bg-sky-600 ring-2 ring-[var(--clr-yelow-100)] px-[1.188rem]">
+            <div class="relative justify-end flex p-4">
+                <div class="absolute bg-[var(--clr-yelow-100)] text-transparent size-4 rounded-full"><a href="#"></a>*</div>
+                <input class="hidden absolute size-8" type="checkbox" name="" id="">
+                <img class=" size-8" src="./img/notify.svg" alt="">
+            </div>
+            <div class="w-full flex justify-center mb-4">
+                <img class="relative rounded-full w-20 ring-4 ring-white size-[5rem]"
+                    src="https://randomuser.me/api/portraits/women/31.jpg" alt="User Profile">
+                
+                <div class="absolute top-[120px] right-20">
+                    <button
+                        class="rounded-full bg-[var(--clr-yelow-100)] size-8 text-white text-2xl font-bold">+</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <ul class="texto text-white text-center">
+                    <li class="subtitulo-pesado text-white text-center">Nombre de usuario</li>
+                    <li>Informática y Tecnología Multimedia</li>
+                    <li>C52145</li>
+                </ul>
+                <div class="flex flex-col gap-y-4">
+                    <div>
+                        <form class="ring-2 ring-white flex sm:h-[3.5rem] h-[2rem] rounded-full" action="">
+                            <input class="focus:outline-none pl-8 w-full text-white texto bg-transparent" type="text"
+                                placeholder="Buscar">
+                            <input class="px-8 lupa w-10" type="submit" value="">
+                        </form>
+                    </div>
+
+                    <div class="px-4 justify-between items-center ring-2 ring-white flex sm:h-[3.5rem] h-[2rem] rounded-full">
+                        <h1 class="texto text-white text-center">Aplicar filtros</h1>
+                        <input class="hidden absolute size-8 " type="checkbox" name="" id="">
+                        <img class=" size-6" src="./img/filters.svg" alt="">
+                    </div>
+
+                    <hr class="w-[90vw] text-white bg-white">
+
+                    <div class="px-4 justify-between items-center ring-2 ring-white flex sm:h-[3.5rem] h-[2rem] rounded-full">
+                        <h1 class="texto text-white text-center">Cursos matriculados</h1>
+                        <input class="hidden absolute size-8 " type="checkbox" name="" id="">
+                        <img class=" size-6" src="./img/courses.svg" alt="">
+                    </div>
+
+                    <hr class="w-[90vw] text-white bg-white">
+
+                    <a class="px-4 flex justify-center items-center ring-2 ring-white flex sm:h-[3.5rem] h-[2rem] rounded-full texto text-white" href="#">Progreso de cursos</a>
+
+                    <a class="px-4 flex justify-center items-center ring-2 ring-white flex sm:h-[3.5rem] h-[2rem] rounded-full texto text-white" href="#">Resumen de actividades</a>
+
+                    <hr class="w-[90vw] text-white bg-white">
+
+                    <a class="texto text-white flex justify-center" href="#">Cerrar sesion</a>
+
+                </div>
+            </div>
+
+        </div>
+
     </header>
     <main>
 
