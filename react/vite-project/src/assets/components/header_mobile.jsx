@@ -37,7 +37,7 @@ export function HeaderMobile() {
       </div>
       <div className="z-10 absolute top-0 right-[0px] w-[70vw] h-[100vh]  bg-black ring-2 ring-[var(--clr-yelow-100)] px-[1.188rem]">
         <div className="relative justify-end flex p-4">
-          <div className="absolute bg-amber-400 text-transparent size-4 rounded-full">
+          <div className="absolute bg-yellow-100 text-transparent size-4 rounded-full">
             <a href="#" />
             *
           </div>
@@ -60,7 +60,7 @@ export function HeaderMobile() {
             src="https://randomuser.me/api/portraits/women/31.jpg"
           />
           <div className="absolute top-[120px] right-20">
-            <button className="rounded-full bg-amber-400 size-8 text-white text-2xl font-bold">
+            <button className="rounded-full bg-yellow-100 size-8 text-white text-2xl font-bold">
               +
             </button>
           </div>
