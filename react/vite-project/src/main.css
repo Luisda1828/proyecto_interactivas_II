@@ -35,7 +35,7 @@
 } 
 
 .lupa{
-    background-image: url(../img/search.svg);
+    background-image: url(../../components/img/search.svg);
     background-repeat: no-repeat;
     background-position: center;
 }

@@ -52,9 +52,9 @@ export  function Calendario() {
 
 
   return (
-      <div className="flex flex-col  gap-3 ">
-          <div className="flex justify-center ">
-          <div className="font-sans rounded-2xl  ring-2 ring-white shadow-xl w-80 py-8 px-4 relative bg-sky-600 text-white h-[30rem]">
+      <div className="flex flex-col gap-3 w-full ">
+          <div className="flex  w-full  ">
+          <div className="font-sans rounded-2xl  w-full  ring-2 ring-white shadow-xl py-8 px-12 relative bg-sky-600 text-white ">
           <div class="flex justify-around mb-8">
                     <div>
                         <p class="text-center texto">Poco</p>
@@ -81,6 +81,7 @@ export  function Calendario() {
                         </svg></button>
                 </div>
                 <hr class="w-[100%] border-[#F5A747] m-auto"></hr>
+                
             <div className="flex justify-around subtitulo font-normal mb-4 text-white">
               <div className="grid place-items-center">D</div>
               <div className="grid place-items-center">L</div>
@@ -141,10 +142,10 @@ export  function Calendario() {
           </div>
 
           </div>
-                <div className="flex flex-col items-center justify-between ">
+                <div className="flex flex-col  ">
                 <span class=" text-center text-sky-600 text-nowrap font-semibold sm:text-[1.625rem]  ">Añadir evento</span>
-                    <div class=" bg-sky-600 text-center rounded-full ring-2 ring-white shadow-xl flex flex-col justify-center items-center px-8">
-                    Resumen de actividades Diarias y <span className="flex items-center justify-center">Semanales</span>
+                    <div class=" bg-sky-600 text-center rounded-full ring-2 ring-white shadow-xl flex flex-col py-4 px-8">
+                    Resumen de actividades Diarias y Semanales
                     </div> 
                 </div>
           </div>

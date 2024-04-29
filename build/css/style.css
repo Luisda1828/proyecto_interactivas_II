@@ -685,68 +685,12 @@ video {
   top: 95%;
 }
 
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[4px\] {
-  left: 4px;
-}
-
-.left-\[1rem\] {
-  left: 1rem;
-}
-
-.left-\[1\2c 5rem\] {
-  left: 1,5rem;
-}
-
-.left-\[2rem\] {
-  left: 2rem;
-}
-
-.left-\[1\.5rem\] {
-  left: 1.5rem;
-}
-
-.left-\[1\.4rem\] {
-  left: 1.4rem;
-}
-
-.left-\[1\.3rem\] {
-  left: 1.3rem;
-}
-
-.left-\[1\.2rem\] {
-  left: 1.2rem;
-}
-
-.left-\[1\.1rem\] {
-  left: 1.1rem;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .col-span-5 {
@@ -793,26 +737,6 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mb-2 {
@@ -1011,36 +935,12 @@ video {
   height: 5rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
 .min-h-svh {
   min-height: 100svh;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .w-10 {
@@ -1065,6 +965,10 @@ video {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-\[-webkit-fill-available\] {
+  width: -webkit-fill-available;
 }
 
 .w-\[20vw\] {
@@ -1158,6 +1062,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1228,6 +1136,11 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .gap-x-2 {
@@ -1452,6 +1365,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pl-8 {

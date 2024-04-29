@@ -10,24 +10,29 @@ import { Login } from './assets/components/login.jsx'
 import { Cuentanos } from './assets/components/cuentanos_de_ti.jsx'
 import { Eventos } from './assets/components/eventos.jsx'
 import { Calendario } from './assets/components/calendario.jsx'
+import { NavDrawer } from './assets/components/prueba/navDrawer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     
-    <div className='m-12 flex flex-col gap-5' >
-         <Header />
-        <HeaderMobile />
-      {/*   <Login /> */}
-        {/* <Cuentanos/>  */}
-         <div className=" flex flex-col  gap-5  sm:flex-row ">
-         <Calendario />
-          <div className="flex flex-col w-full overflow-y-auto  bg-sky-600  rounded-2xl p-4 gap-4 h-[36.5rem] relative">
+    <div className='overflow-hidden h-[100vh]'>
+     {/*  <Login />
+        <Cuentanos/>  */}
+
+      <NavDrawer/>
+      
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-5 gap-y-4 px-8  h-[30rem] ">
+       
+        <Calendario />  
+            <div class="overflow-y-auto scrollbar-hide  col-span-2  p-4 bg-sky-600 rounded-3xl ">
+            <h1 class="text-center titulo mt-4 mb-4 text-white">Jueves 25 Abril 2024</h1>
             <Eventos />
             <Eventos />
             <Eventos />
             <Eventos />
             <Eventos />
             <Eventos />
-          </div>
-        </div>   
+            </div>
+        </div>
+        
     </div>
 )

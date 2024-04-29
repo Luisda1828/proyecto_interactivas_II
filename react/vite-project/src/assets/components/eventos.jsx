@@ -9,9 +9,9 @@ import '../../index.css'
                         <div className="absolute h-8 w-8  bg-sky-600 border-b-2 border-l-2 border-white bottom-[32%] -left-[1.1rem] rotate-45 "></div>
                         <div className="absolute right-[127.5%] h-full flex  flex-col">
                                 <div className="relative flex justify-center " >
-                                <div className=" absolute size-8 bg-amber-500  rounded-full top-[3rem] "></div>
+                                <div className=" absolute size-8 bg-amber-500  rounded-full top-[3.5rem] "></div>
                                 <div className=" absolute  h-40 top-0   w-1  bg-amber-500  rounded-3xl"></div>
-                                <p className="absolute top-[3rem] left-4">5:00pm</p>
+                                <p className="absolute top-[3rem] left-5 text-white text-[2rem] ">5:00pm</p>
                                 </div>
 
                             </div>
