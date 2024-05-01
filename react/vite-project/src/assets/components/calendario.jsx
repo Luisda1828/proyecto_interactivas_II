@@ -54,7 +54,7 @@ export  function Calendario() {
   return (
       <div className="flex flex-col gap-3 w-full ">
           <div className="flex  w-full  ">
-          <div className="font-sans rounded-2xl  w-full  ring-2 ring-white shadow-xl py-8 px-12 relative bg-sky-600 text-white ">
+          <div className="p-1 m-1 font-sans rounded-2xl  ring-2 ring-white shadow-xl w-full py-8 relative bg-sky-600 text-white">
           <div class="flex justify-around mb-8">
                     <div>
                         <p class="text-center texto">Poco</p>
@@ -97,7 +97,7 @@ export  function Calendario() {
                   key={day.toString()}
                   className={classNames(
                     dayIdx === 0 && colStartClasses[getDay(day)],
-                    ' '
+                    ''
                   )}
                 >
                   <button
@@ -144,7 +144,7 @@ export  function Calendario() {
           </div>
                 <div className="flex flex-col  ">
                 <span class=" text-center text-sky-600 text-nowrap font-semibold sm:text-[1.625rem]  ">Añadir evento</span>
-                    <div class=" bg-sky-600 text-center rounded-full ring-2 ring-white shadow-xl flex flex-col py-4 px-8">
+                    <div class=" bg-sky-600 text-center rounded-full ring-2 ring-white shadow-xl flex flex-col  px-8">
                     Resumen de actividades Diarias y Semanales
                     </div> 
                 </div>

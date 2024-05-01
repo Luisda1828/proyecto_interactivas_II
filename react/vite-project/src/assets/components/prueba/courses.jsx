@@ -3,7 +3,7 @@ import Course from "../img/courses.svg";
 export function Courses() {
 
   return (
-    <div className=" flex flex-col p-4 bg-sky-600 rounded-3xl">
+    <div className="  hidden min-[430px]:flex flex-col p-4 bg-sky-600 rounded-3xl">
     <div className="py-2 flex justify-between">
       <h1 className="texto text-white">
         Cursos matriculados
