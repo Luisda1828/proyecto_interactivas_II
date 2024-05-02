@@ -2,7 +2,7 @@ import filters from "../img/filters.svg";
 export function Filters() {
 
     return (
-        <div className=" flex flex-col p-4 bg-sky-600 rounded-3xl">
+        <div className=" hidden sm:flex flex-col p-4 bg-sky-600 rounded-3xl">
         <div className="py-2 flex justify-between">
           <h1 className="texto text-white">
             Aplicar filtros de busqueda

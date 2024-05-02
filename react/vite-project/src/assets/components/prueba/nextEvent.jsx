@@ -3,7 +3,7 @@ export function NextEvent() {
 
     return (
       
-    <div className="hidden sm:block flex flex-col h-[100%]  p-4 bg-sky-600 rounded-3xl justify-center ">
+    <div className=" flex flex-col h-[100%]  p-4 bg-sky-600 rounded-3xl justify-center ">
         <h2 className="text-yellow-500 subtitulo-pesado flex justify-center">
            Proximo evento
           </h2>

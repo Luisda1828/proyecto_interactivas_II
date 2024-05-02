@@ -11,28 +11,24 @@ import { Cuentanos } from './assets/components/cuentanos_de_ti.jsx'
 import { Eventos } from './assets/components/eventos.jsx'
 import { Calendario } from './assets/components/calendario.jsx'
 import { NavDrawer } from './assets/components/prueba/navDrawer.jsx'
+import { NextEvent } from './assets/components/prueba/nextEvent.jsx'
+import { Courses } from './assets/components/prueba/courses.jsx'
+import { Filters } from './assets/components/prueba/filters.jsx'
+import { MainSection } from './assets/components/prueba/mainSection.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+<<<<<<< HEAD
     
     <div className='overflow-x-hidden h-[100vh]'>
      {/*  <Login />
         <Cuentanos/>  */}
+=======
+    <div className='overflow-x-hidden h-[100vh] '>
+        {/*  <Login /> */}
+        {/* <Cuentanos/>  */}
+>>>>>>> 130181ef388cf2dfddfd8b543b86b7f476a70b33
 
-      <NavDrawer/>
-      
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-5 gap-y-4 px-8  h-[30rem] ">
-       
-        <Calendario />  
-            <div class="overflow-y-auto scrollbar-hide  col-span-2  p-4 bg-sky-600 rounded-3xl ">
-            <h1 class="text-center titulo mt-4 mb-4 text-white">Jueves 25 Abril 2024</h1>
-            <Eventos />
-            <Eventos />
-            <Eventos />
-            <Eventos />
-            <Eventos />
-            <Eventos />
-            </div>
-        </div>
-        
+        <NavDrawer />
+        <MainSection/>
     </div>
-)
+);

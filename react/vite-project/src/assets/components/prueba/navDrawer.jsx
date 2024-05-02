@@ -36,8 +36,8 @@ export function NavDrawer() {
   }
 
   return (
-    <div>
-      <div className="relative bg-sky-600 grid sm:grid-cols-3 grid-cols-2 py-4 sm:px-8 px-0 sm:gap-x-10 gap-x-28">
+    <div className="mb-8">
+      <div className="relative bg-sky-600 grid sm:grid-cols-3 grid-cols-2 py-2 sm:px-8 px-0 sm:gap-x-10 gap-x-28">
       <div className="items-center flex">
         <div className="flex-col">
         <a href="#">
@@ -65,23 +65,20 @@ export function NavDrawer() {
         <a className=" hidden sm:block" href="#">
           <img alt="" className="p-1 size-10" src={Notify} />
         </a>
-
-        <div className="items-center">
+                {/* <img alt="" className=" size-8 bg-sky-600" src={HambMenu} /> */}
+          <div className="w-full flex justify-end">
           <input
-            className="opacity-0 absolute size-[5rem] z-1"
-            onChange={(e) => showMenu(e.target)}
-            id="checkbox"
-            name=""
-            type="checkbox"
+                  className="opacity-0 absolute size-[3rem] z-10"
+                  onChange={(e) => showMenu(e.target)}
+                  id="checkbox"
+                  name=""
+                  type="checkbox"
+                />
+          <img
+            alt="User Profile"
+            className="relative rounded-full  ring-4 ring-white size-[3rem]"
+            src="https://randomuser.me/api/portraits/women/31.jpg"
           />
-          {/* <img alt="" className=" size-8 bg-sky-600" src={HambMenu} /> */}
-          <div className="w-full flex justify-center mb-4">
-    <img
-      alt="User Profile"
-      className="relative rounded-full w-20 ring-4 ring-white size-[5rem]"
-      src="https://randomuser.me/api/portraits/women/31.jpg"
-    />
-  </div>
         </div>
       </div>
 
@@ -209,15 +206,7 @@ export function NavDrawer() {
 
     {/* siguiente seccion */}
 
-<div className="p-8">
-  <div className="grid grid-cols-3 gap-x-5">
 
-    <NextEvent/>
-    <Courses/>
-    <Filters/>
-
-  </div>
-</div>
     </div>
     
   );
