@@ -14,7 +14,7 @@ import { NavDrawer } from './assets/components/prueba/navDrawer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     
-    <div className='overflow-hidden h-[100vh]'>
+    <div className='overflow-x-hidden h-[100vh]'>
      {/*  <Login />
         <Cuentanos/>  */}
 

@@ -5,7 +5,7 @@ import {RadioButton} from './radioBtn';
 
  export function Cuentanos() {
 
-    const [defaultValue, setDefaultValue] = useState('');
+   const [defaultValue, setDefaultValue] = useState('');
   const [sickInputDisabled, setSickInputDisabled] = useState(true);
   const [sickInputOpacity, setSickInputOpacity] = useState('50%');
   const [sickInputValue, setSickInputValue] = useState('');

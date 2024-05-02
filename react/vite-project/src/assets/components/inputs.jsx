@@ -1,6 +1,7 @@
 import '../../index.css'
 
  export function Inputs({text}) {
+  
 
   function clearDefaultValue(input) {
     if (input.value === input.defaultValue) {
