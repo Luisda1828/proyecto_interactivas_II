@@ -7,6 +7,7 @@ import {Button} from './assets/components/button.jsx'
 import {Header} from './assets/components/header.jsx'
 import { HeaderMobile } from './assets/components/header_mobile.jsx'
 import { Login } from './assets/components/login.jsx'
+import { Sing_up } from './assets/components/sing_up.jsx'
 import { Cuentanos } from './assets/components/cuentanos_de_ti.jsx'
 import { Eventos } from './assets/components/eventos.jsx'
 import { Calendario } from './assets/components/calendario.jsx'
@@ -23,8 +24,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Cuentanos/>  */}
         {/*  <Login /> */}
         {/* <Cuentanos/>  */}
-
-        <NavDrawer />
-        <MainSection/>
+         <Sing_up/>
+         {/* <NavDrawer />  */}
+          {/*   <MainSection/> */}
+      
     </div>
 );
