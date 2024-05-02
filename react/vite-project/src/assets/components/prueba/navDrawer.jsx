@@ -1,6 +1,9 @@
 import VinxLogo from "../../components/img/vinxLogo.svg";
 import Notify from "../../components/img/notify.svg";
 import HambMenu from "../../components/img/hamb-menu.svg";
+import Search from "../../components/img/search.svg";
+import ImgFilter from "../../components/img/filters.svg";
+import ImgCourse from "../../components/img/courses.svg";
 import {NextEvent} from "./nextEvent.jsx";
 import {Courses} from "./courses.jsx";
 import {Filters} from "./filters.jsx";
@@ -37,7 +40,7 @@ export function NavDrawer() {
 
   return (
     <div className="mb-8">
-      <div className="relative bg-sky-600 grid sm:grid-cols-3 grid-cols-2 py-2 sm:px-8 px-0 sm:gap-x-10 gap-x-28">
+      <div className="relative bg-sky-600 grid sm:grid-cols-3 grid-cols-2 py-2 sm:px-8 px-4 sm:gap-x-10 gap-x-28">
       <div className="items-center flex">
         <div className="flex-col">
         <a href="#">
@@ -58,7 +61,8 @@ export function NavDrawer() {
             placeholder="Buscar"
             type="text"
           />
-          <input className="bg-[${Search}] w-10" type="submit" value="" />
+          {/* style={{ backgroundImage: `url(${Search})` }} */}
+          <input className=" bg-no-repeat bg-center w-10" style={{ backgroundImage: `url(${Search})` }} type="submit" value="" />
         </form>
       </div>
       <div className="flex sm:justify-between justify-center items-center">
@@ -84,12 +88,13 @@ export function NavDrawer() {
 
       {/* menu emergente */}
 
-      <div className="z-10 absolute top-0 right-[-1000px] w-[40vw] h-[100vh]  bg-black px-[1.188rem]" name="menu">
+      <div className="z-10 absolute top-0 right-[-1000px] sm:w-[40vw] w-[70vw] h-[100vh]  bg-black px-[1.188rem]" name="menu">
       <div className="relative justify-star flex p-4">
     <div className="block sm:hidden  absolute bg-yellow-500 text-transparent size-4 rounded-full">
       <a href="#" />
       *
     
+    <div>
     <input
       className="hidden absolute size-8"
       id=""
@@ -98,9 +103,11 @@ export function NavDrawer() {
     />
     <img
       alt=""
-      className="size-8"
+      className="size-10"
       src={Notify}
     />
+    <h1>X</h1>
+    </div>
     </div>
   </div>
   <div className="w-full flex justify-center mb-4">
@@ -109,7 +116,7 @@ export function NavDrawer() {
       className="relative rounded-full w-20 ring-4 ring-white size-[5rem]"
       src="https://randomuser.me/api/portraits/women/31.jpg"
     />
-    <div className="absolute top-[90px] right-[21rem]">
+    <div className="absolute top-[90px] sm:right-[21rem] right-[6rem]">
       <button className="rounded-full bg-yellow-500 size-8 text-white text-2xl font-bold">
         +
       </button>
@@ -139,7 +146,7 @@ export function NavDrawer() {
             type="text"
           />
           <input
-            className="px-8 lupa w-10"
+            className="px-7 bg-no-repeat bg-center w-10" style={{ backgroundImage: `url(${Search})` }}
             type="submit"
             value=""
           />
@@ -158,7 +165,7 @@ export function NavDrawer() {
         <img
           alt=""
           className=" size-6"
-          src="./img/filters.svg"
+          src={ImgFilter}
         />
       </div>
       <hr className="sm:hidden w-[90vw] text-white bg-white" />
@@ -175,8 +182,8 @@ export function NavDrawer() {
         />
         <img
           alt=""
-          className=" size-6"
-          src="./img/courses.svg"
+          className="size-6"
+          src={ImgCourse}
         />
       </div>
       <hr className="w-[90vw] text-white bg-white" />

@@ -21,25 +21,9 @@ import {
 
 import { Fragment, useState } from 'react';
 
-
-
-
-
-
-
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
-
-
-
-
-
-
-
 
 export function Calendario() {
 
@@ -53,14 +37,6 @@ export function Calendario() {
   const closeModal = () => {
     setShowModal(false);
   };
-
-
-
-
-
-
-
-
 
   let today = startOfToday()
   let [selectedDay, setSelectedDay] = useState(today)
@@ -82,24 +58,10 @@ export function Calendario() {
     setCurrentMonth(format(firstDayNextMonth, 'MMM-yyyy'))
   }
 
-
-
   return (
-<<<<<<< HEAD
-
-
-
-
-
-
-    <div className="flex flex-col gap-3 w-full ">
-      <div className="flex  w-full  ">
-        <div className="font-sans rounded-2xl  w-full  ring-2 ring-white shadow-xl py-8 px-12 relative bg-sky-600 text-white ">
-=======
       <div className="flex flex-col gap-3 w-full ">
           <div className="flex  w-full  ">
           <div className="p-1 m-1 font-sans rounded-2xl  ring-2 ring-white shadow-xl w-full py-8 relative bg-sky-600 text-white">
->>>>>>> 130181ef388cf2dfddfd8b543b86b7f476a70b33
           <div class="flex justify-around mb-8">
             <div>
               <p class="text-center texto">Poco</p>
@@ -149,7 +111,6 @@ export function Calendario() {
                   type="button"
                   onClick={() => setSelectedDay(day)}
                   className={classNames(
-<<<<<<< HEAD
                     isEqual(day, selectedDay) && 'text-white',
                     !isEqual(day, selectedDay) &&
                     isToday(day) &&
@@ -170,10 +131,6 @@ export function Calendario() {
                     (isEqual(day, selectedDay) || isToday(day)) &&
                     'font-semibold',
                     'mx-auto flex h-8 w-8 items-center justify-center rounded-full'
-=======
-                    dayIdx === 0 && colStartClasses[getDay(day)],
-                    ''
->>>>>>> 130181ef388cf2dfddfd8b543b86b7f476a70b33
                   )}
                 >
                   <time dateTime={format(day, 'yyyy-MM-dd')}>
@@ -198,15 +155,6 @@ export function Calendario() {
            </button>
            </div>
          
-         
-
-
-
-
-
-
-
-
         </div>
 
       </div>
@@ -222,23 +170,7 @@ export function Calendario() {
           Resumen de actividades Diarias y Semanales
         </div>
     </div>
-
-
-<<<<<<< HEAD
-=======
-          </div>
-                <div className="flex flex-col  ">
-                <span class=" text-center text-sky-600 text-nowrap font-semibold sm:text-[1.625rem]  ">Añadir evento</span>
-                    <div class=" bg-sky-600 text-center rounded-full ring-2 ring-white shadow-xl flex flex-col  px-8">
-                    Resumen de actividades Diarias y Semanales
-                    </div> 
-                </div>
-          </div>
-     
-    
->>>>>>> 130181ef388cf2dfddfd8b543b86b7f476a70b33
   )
-
 
 
 }

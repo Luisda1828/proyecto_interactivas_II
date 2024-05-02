@@ -1,7 +1,7 @@
 import '../../index.css'
 
 
- export function Eventos() {
+ export function Eventos(titulo, text, image) {
 
  return (   
          
@@ -11,9 +11,8 @@ import '../../index.css'
                                 <div className="relative flex justify-center " >
                                 <div className=" absolute size-8 bg-amber-500  rounded-full top-[3.5rem] "></div>
                                 <div className=" absolute  h-40 top-0   w-1  bg-amber-500  rounded-3xl"></div>
-                                <p className="absolute top-[3rem] left-5 text-white text-[2rem] ">5:00pm</p>
-                                </div>
-
+                                <p className="absolute top-[3rem] left-5 text-white text-[2rem]">5:00 pm</p>
+                                </div> 
                             </div>
                        
                             <div className="relative flex space-x-7">

@@ -17,16 +17,12 @@ import { Filters } from './assets/components/prueba/filters.jsx'
 import { MainSection } from './assets/components/prueba/mainSection.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<<<<<<< HEAD
     
     <div className='overflow-x-hidden h-[100vh]'>
      {/*  <Login />
         <Cuentanos/>  */}
-=======
-    <div className='overflow-x-hidden h-[100vh] '>
         {/*  <Login /> */}
         {/* <Cuentanos/>  */}
->>>>>>> 130181ef388cf2dfddfd8b543b86b7f476a70b33
 
         <NavDrawer />
         <MainSection/>

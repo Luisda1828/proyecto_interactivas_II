@@ -8,7 +8,7 @@ export function Courses() {
       <h1 className="texto text-white">
         Cursos matriculados
       </h1>
-      <img
+      <img className="size-6"
         alt=""
         src={Course}
       />
