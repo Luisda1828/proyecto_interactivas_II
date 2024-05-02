@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import './main.css'
-import {Inputs} from './assets/components/inputs.jsx'
-import {Button} from './assets/components/button.jsx'
-import {Header} from './assets/components/header.jsx'
+import { Inputs } from './assets/components/inputs.jsx'
+import { Button } from './assets/components/button.jsx'
+import { Header } from './assets/components/header.jsx'
 import { HeaderMobile } from './assets/components/header_mobile.jsx'
 import { Login } from './assets/components/login.jsx'
 import { Sing_up } from './assets/components/sing_up.jsx'
@@ -18,15 +18,13 @@ import { Filters } from './assets/components/prueba/filters.jsx'
 import { MainSection } from './assets/components/prueba/mainSection.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    
+
     <div className='overflow-x-hidden h-[100vh]'>
-     {/*  <Login />
-        <Cuentanos/>  */}
-        {/*  <Login /> */}
-        {/* <Cuentanos/>  */}
-         <Sing_up/>
-         {/* <NavDrawer />  */}
-          {/*   <MainSection/> */}
-      
+        {/*  <Login />*/}
+        {/*<Cuentanos/>*/}
+        {/*<Sing_up />*/}
+        <NavDrawer /> 
+        <MainSection/>
+
     </div>
 );
