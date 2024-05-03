@@ -15,9 +15,9 @@ export default function Modal() {
 
 
 
-<div className="fixed inset-0   justify-center  bg-black  bg-opacity-30  backdrop-blur-sm flex  rounded m-auto text-center items-center">
+<div className="fixed inset-0   justify-center  bg-black  bg-opacity-30  backdrop-blur-sm flex  text-center items-center">
 
-<div className="fixed inset-0   justify-center max-w-[51rem] bg-sky-600 rounded m-auto mb-5 mt-5 text-center items-center">
+<div className="fixed inset-0   justify-center max-w-[51rem] bg-sky-600 rounded m-auto mb-2 mt-2 text-center items-center">
 
 
     <div className=" gap-5 max-w-[55rem] text-center  items-center">
