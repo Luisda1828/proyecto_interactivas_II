@@ -59,7 +59,6 @@ export function Calendario() {
   }
 
   return (
-<<<<<<< HEAD
 
 
 
@@ -69,11 +68,6 @@ export function Calendario() {
     <div className="flex flex-col gap-3 w-full ">
       <div className="flex  w-full  ">
         <div className="font-sans rounded-2xl  w-full  ring-2 ring-white shadow-xl py-8 px-12 relative bg-sky-600 text-white ">
-=======
-      <div className="flex flex-col gap-3 w-full ">
-          <div className="flex  w-full  ">
-          <div className="p-1 m-1 font-sans rounded-2xl  ring-2 ring-white shadow-xl w-full py-8 relative bg-sky-600 text-white">
->>>>>>> 218a553f8d74d1d92cc0e390ec5123d4c6520990
           <div class="flex justify-around mb-8">
             <div>
               <p class="text-center texto">Poco</p>
@@ -182,11 +176,8 @@ export function Calendario() {
           Resumen de actividades Diarias y Semanales
         </div>
     </div>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 218a553f8d74d1d92cc0e390ec5123d4c6520990
   )
 
 
