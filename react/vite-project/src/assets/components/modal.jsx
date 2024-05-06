@@ -2,6 +2,7 @@ import React from "react";
 import myImage from '../../assets/components/img/upload.svg';
 import { useState } from "react";
 
+import { CmBox } from "./CmBox.jsx";
 
 
 export default function Modal() {
@@ -13,11 +14,9 @@ export default function Modal() {
             {isopen && (
 
 
-
-
 <div className="fixed inset-0   justify-center  bg-black  bg-opacity-30  backdrop-blur-sm flex  text-center items-center">
 
-<div className="fixed inset-0   justify-center max-w-[51rem] bg-sky-600 rounded m-auto mb-2 mt-2 text-center items-center">
+<div className="fixed inset-0   justify-center max-w-[51rem] bg-sky-600 rounded m-auto mb-3 mt-2 text-center items-center">
 
 
     <div className=" gap-5 max-w-[55rem] text-center  items-center">
@@ -62,11 +61,11 @@ export default function Modal() {
 
 
 
-        <div className=" max-w-[55rem] grid grid-cols-2    gap-2 text-center justify-start">
-            <div className=" grid border-r grid-cols-1   border-white justify-start">
+        <div className=" max-w-[55rem] grid grid-cols-2    gap-2 text-center justify-start  m-4">
+            <div className=" grid border-r grid-cols-1   border-white justify-start  ">
                 <h2 className="text-center justify-start m-1 pl-8 sm:text-[1.625rem] text-white  items-center mt-1 mb-0">Fecha y hora </h2>
 
-                <div className=" flex ms-14  ">
+                <div className="w-full  flex ms-5 ">
                     <input type="date" className="border m-2 mt-0  text-white border-white rounded-lg px-3 py-2 focus:outline-none bg-transparent focus:border-blue-500"
 
                     />
@@ -78,31 +77,9 @@ export default function Modal() {
                 </div>
 
 
-                <h2 className="text-center m-2 sm:text-[1.625rem] pl-5 text-white  items-center  mb-2 mt-0">Categoria</h2>
-                <div className="m-2 ">
-                    <div className="text-white grid grid-cols-2 gap-4 ml-20 mr-10">
-                        <div>
-                            <label className="flex items-center">
-                                <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                                <span className="ml-2">Carrera</span>
-                            </label>
-                            <label className="flex items-center">
-                                <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                                <span className="ml-2">Curso</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label className="flex items-center">
-                                <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                                <span className="ml-2">Universidad</span>
-                            </label>
-                            <label className="flex items-center">
-                                <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                                <span className="ml-2">Estudiante</span>
-                            </label>
-                        </div>
-                    </div>
-
+                <h2 className="text-center  sm:text-[1.625rem] text-white  items-center mt-2 mb-2">Etiqueta</h2>
+                <div className="d mt-0 mb-0 p-2">
+                <CmBox/>
 
                 </div>
             </div>
@@ -112,37 +89,17 @@ export default function Modal() {
             <div className="col-start-2 mt-0">
 
                 <h2 className="text-center  sm:text-[1.625rem] text-white  items-center mt-2 mb-2">Etiqueta</h2>
-                <div className="m-5 mt-0 mb-0">
-                    <input
-                        className="  p-2 mb-2  ring-2 ring-white rounded-full text-white bg-transparent w-full h-10 focus: outline-none"
-                        type="text" value="" onfocus="clearDefaultValue(this)" onblur="restoreDefaultValue(this)" />
+                <div className="d mt-0 mb-0 p-2">
+                <CmBox/>
 
                 </div>
 
 
 
 
-
-                <h2 className="text-center m-5 mt-0 sm:text-[1.625rem] text-white  items-center mb-2">Estado</h2>
-                <div className="m-5 ">
-                    <div className=" flex gap-4 ml-20 mr-10  text-white ">
-
-                        <label className="flex-row items-center">
-                            <input type="checkbox" className="form-checkbox    h-5 w-5 text-blue-600" />
-                            <div className="ml-2">Inicio</div>
-                        </label>
-                        <label class="flex-row items-center">
-                            <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                            <div className="ml-2">En proceso</div>
-                        </label>
-
-                        <label className="flex-row items-center">
-                            <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" />
-                            <div className="ml-2">Finalizado</div>
-                        </label>
-
-                    </div>
-
+                <h2 className="text-center  sm:text-[1.625rem] text-white  items-center mt-2 mb-2">Estado</h2>
+                <div className="d mt-0 mb-0 p-2">
+                <CmBox/>
 
                 </div>
 
@@ -169,14 +126,14 @@ export default function Modal() {
 
         </div>
 
-        <h1 class=" m-5 sm:text-[1.625rem] text-white  items-start text-justify ml-16 mt-0 mb-0 ">Descripcion </h1>
-      <p class="ring-white ring-2 m-14 mb-2 rounded-xl text-white mt-0">Lorem ipsum dolor sit amet consectetur adipisicing
+        <h1 class=" m-5 sm:text-[1.625rem] text-white  items-start text-justify ml-16 mt-0 mb-0 ">Descripción: </h1>
+      <p class="ring-white ring-1 m-6 mb-2 rounded-xl text-white mt-0">Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Expedita nihil quo consequatur autem error, iste distinctio mollitia modi ipsam nam pariatur libero. Ab
         sed optio molestiae, culpa qui quisquam quo?</p>
 
-      <a class=" max-w-[48.5rem] bg-[#F5A747] flex justify-center items-center mb-0 m-5 mt-0 text-center  rounded-full text-white w-full h-10 focus: outline-none "
+      <a class=" max-w-[48.5rem] bg-[#F5A747] flex justify-center items-center mb-0 m-5 mt-4 text-center  rounded-full text-white w-full h-10 focus: outline-none "
         href="#">Agregar</a>
-        <button className="max-w-[48.5rem] bg-transparent p-1 flex justify-center items-center  m-5 mt-0 text-center  rounded-full text-white w-full h-10 focus: outline-none  " onClick={() => setIsopen(false)} >Close</button>
+        <button className="max-w-[48.5rem] bg-transparent mt-4 p-1 flex justify-center items-center  m-5  text-center  rounded-full text-[#F5A747] w-full h-10 focus: outline-none  " onClick={() => setIsopen(false)} >Close</button>
     </div>
 
 </div>

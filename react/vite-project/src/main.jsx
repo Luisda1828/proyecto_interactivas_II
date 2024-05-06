@@ -17,26 +17,18 @@ import { Courses } from './assets/components/prueba/courses.jsx'
 import { Filters } from './assets/components/prueba/filters.jsx'
 import { MainSection } from './assets/components/prueba/mainSection.jsx'
 import { Formulario } from './assets/components/formulario.jsx'
+import { Actividades_diarias } from './assets/components/actividades_diarias.jsx'
+import { ListaEvent } from './assets/components/listaEvent.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<<<<<<< HEAD
     
     <div className='overflow-x-hidden h-[100vh]'>
-     {/*  <Login />
-        <Cuentanos/>  */}
+     {/* <Login />  */}
+        {/* <Cuentanos/>   */}
 
-        {/* <NavDrawer /> */}
-        {/* <MainSection/> */}
-        <Formulario/>
-=======
-
-    <div className='overflow-x-hidden h-[100vh]'>
-        {/*  <Login />*/}
-        {/*<Cuentanos/>*/}
-        {/*<Sing_up />*/}
-        <NavDrawer /> 
-        <MainSection/>
-
->>>>>>> 218a553f8d74d1d92cc0e390ec5123d4c6520990
+        <NavDrawer />
+        <Actividades_diarias/>
+        <ListaEvent/>
+        {/* <Formulario/> */}
     </div>
 );
