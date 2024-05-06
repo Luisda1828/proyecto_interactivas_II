@@ -21,6 +21,7 @@ import { Actividades_diarias } from './assets/components/actividades_diarias.jsx
 import { ListaEvent } from './assets/components/listaEvent.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+<<<<<<< HEAD
     
     <div className='overflow-x-hidden h-[100vh]'>
      {/* <Login />  */}
@@ -30,5 +31,23 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Actividades_diarias/>
         <ListaEvent/>
         {/* <Formulario/> */}
+=======
+
+
+    <div className='overflow-x-hidden h-[100vh]'>
+        {/*  <Login />
+        <Cuentanos/>  */}
+
+        {/* <NavDrawer /> */}
+        {/* <MainSection/> */}
+        {/*<Formulario />*/}
+        <div className='overflow-x-hidden h-[100vh]'>
+            {/*<Login />*/}
+            {/*<Cuentanos/>*/}
+            {/*<Sing_up />*/}
+            {<NavDrawer />}
+            {<MainSection/>}
+        </div>
+>>>>>>> 7b4a9cad8d194e05cde938dbc3eaa7b1843ffdb0
     </div>
 );
